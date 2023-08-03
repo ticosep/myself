@@ -1,9 +1,9 @@
-import Coin from './components/Coin';
+import WipBouncer from './components/WipBouncer';
 
 function App() {
     return (
         <div className="flex items-center justify-center flex-col h-full">
-            <Coin />
+            <WipBouncer />
         </div>
     );
 }

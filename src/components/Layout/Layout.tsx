@@ -15,7 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
             }}
         >
             <Header />
-            <div className="container p-2 h-[calc(100%-2rem)]">{children}</div>
+            <div className="container p-2 h-[calc(100%-64px)]">{children}</div>
         </div>
     );
 };
