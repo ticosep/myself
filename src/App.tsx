@@ -1,11 +1,9 @@
-import { useTranslation } from 'react-i18next';
+import Coin from './components/Coin';
 
 function App() {
-    const { t } = useTranslation();
-
     return (
-        <div>
-            <label>{t('hello')}</label>
+        <div className="flex items-center justify-center flex-col h-full">
+            <Coin />
         </div>
     );
 }
