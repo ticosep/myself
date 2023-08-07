@@ -3,7 +3,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Header = () => {
     return (
-        <header className="shadow-gray shadow-md bg-white px-2 py-4">
+        <div className="fixed top-0 w-full shadow-lg bg-white px-2 py-4">
             <div className="container text-2xl">
                 <a
                     href="https://www.linkedin.com/in/egisto-parronchi-neto-881367161/"
@@ -20,7 +20,7 @@ const Header = () => {
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
             </div>
-        </header>
+        </div>
     );
 };
 

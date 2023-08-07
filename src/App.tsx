@@ -1,21 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useRoutes } from './hooks/useRoutes';
+import { HashRouter as Router } from 'react-router-dom';
+import { Graduation, Welcome } from './sections';
 
 function App() {
-    const routes = useRoutes();
     return (
         <Router>
-            <Routes>
-                {routes.map(({ element, path }, index) => {
-                    return (
-                        <Route
-                            key={`route_${index}`}
-                            element={element}
-                            path={path}
-                        />
-                    );
-                })}
-            </Routes>
+            <Welcome />
+            <Graduation />
         </Router>
     );
 }
