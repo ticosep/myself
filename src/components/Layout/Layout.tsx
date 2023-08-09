@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import Header from '../Header';
+import SectionScroll from '../SectionScroll';
 
 type LayoutProps = {
     children: ReactNode;
@@ -7,12 +8,13 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
     return (
-        <div>
+        <>
             <Header />
-            <div className="container h-[calc(100%-64px)] mt-[72px]">
+            <SectionScroll />
+            <div className="container w-4/5 ml-[20%] h-[calc(100%-64px)] mt-[72px]">
                 {children}
             </div>
-        </div>
+        </>
     );
 };
 

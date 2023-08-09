@@ -13,4 +13,7 @@
     h2 {
         @apply text-xl;
     }
+    input[type='range'] {
+        appearance: slider-vertical;
+    }
 }

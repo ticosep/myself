@@ -28,6 +28,9 @@ module.exports = {
             fontFamily: {
                 sans: ['Roboto', 'sans-serif'],
             },
+            rotate: {
+                270: '270deg',
+            },
             boxShadow: {
                 'shadow-sd': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
             },
