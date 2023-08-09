@@ -39,6 +39,7 @@ module.exports = {
             },
             animation: {
                 spinY: 'rotateYSpin 2s linear infinite',
+                'spin-slow': 'spin 3s linear infinite',
             },
         },
     },
