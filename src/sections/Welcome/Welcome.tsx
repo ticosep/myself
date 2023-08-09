@@ -13,8 +13,8 @@ const Welcome = () => {
                     src={myself}
                     alt="image"
                 />
-                <div className="flex-initial text-gray-700 bg-gray-400 px-4 py-2 m-2">
-                    <h1 className="font-bold text-xl">{t('whoAmI')}</h1>
+                <div className="flex-initial text-gray-700 bg-gray-400 ml-4">
+                    <h1>{t('whoAmI')}</h1>
                     <Trans i18nKey="presentation" />
                 </div>
             </div>

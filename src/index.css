@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@layer base {
+    strong {
+        @apply text-2xl;
+    }
+    h1 {
+        @apply text-2xl;
+        @apply font-bold;
+    }
+    h2 {
+        @apply text-xl;
+    }
+}

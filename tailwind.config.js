@@ -31,6 +31,15 @@ module.exports = {
             boxShadow: {
                 'shadow-sd': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
             },
+            keyframes: {
+                rotateYSpin: {
+                    '0%': { transform: 'rotateY(0deg)' },
+                    '100%': { transform: 'rotateY(360deg)' },
+                },
+            },
+            animation: {
+                spinY: 'rotateYSpin 2s linear infinite',
+            },
         },
     },
     plugins: [],
