@@ -45,6 +45,9 @@ module.exports = {
                 'spin-slow': 'spin 3s linear infinite',
                 'spin-semi-slow': 'spin 2s linear infinite',
             },
+            backgroundImage: {
+                ballon: "url('./images/ballon.png')",
+            },
         },
     },
     plugins: [],

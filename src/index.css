@@ -14,6 +14,40 @@
         @apply text-xl;
     }
     input[type='range'] {
-        appearance: slider-vertical;
+        appearance: none;
+        -webkit-appearance: none;
+        background: transparent;
+
+        position: fixed;
+        bottom: 50vh;
+        left: 0;
+        width: 100vh;
+        margin-top: 64px;
+        margin-right: 10%;
+
+        transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+    }
+    input[type='range']::-webkit-slider-runnable-track {
+        height: 20px;
+        margin-top: -64px;
+        padding-top: 64px;
+        box-shadow:
+            1px 1px 1px #000000,
+            0px 0px 1px #0d0d0d;
+        background: #434546;
+        border: 0.2px solid #010101;
+    }
+
+    input[type='range']::-webkit-slider-thumb {
+        box-shadow:
+            1px 1px 1px #000000,
+            0px 0px 1px #0d0d0d;
+        border: 1px solid #000000;
+        height: 40px;
+        width: 30px;
+        border-radius: 3px;
+        background: #ffffff;
+        -webkit-appearance: none;
     }
 }
