@@ -1,14 +1,14 @@
 import i18n from 'i18next';
-import * as welcomeEN from '../locales/en/welcome.json';
-import * as welcomePT from '../locales/pt/welcome.json';
+import * as welcomeEN from '../locales/en/translations.json';
+import * as welcomePT from '../locales/pt/translations.json';
 import { initReactI18next } from 'react-i18next';
 
 const resources = {
     en: {
-        translation: { welcome: welcomeEN },
+        translation: welcomeEN,
     },
     pt: {
-        translation: { welcome: welcomePT },
+        translation: welcomePT,
     },
 };
 

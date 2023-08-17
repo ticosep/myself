@@ -1,22 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useRoutes } from './hooks/useRoutes';
+import { Routes, Route } from 'react-router-dom';
+import { Graduation, Welcome, Work } from './sections';
 
 function App() {
-    const routes = useRoutes();
     return (
-        <Router>
-            <Routes>
-                {routes.map(({ element, path }, index) => {
-                    return (
-                        <Route
-                            key={`route_${index}`}
-                            element={element}
-                            path={path}
-                        />
-                    );
-                })}
-            </Routes>
-        </Router>
+        <Routes>
+            <Route path="/" element={<Welcome />} />
+            <Route path="/graduation" element={<Graduation />} />
+            <Route path="/work" element={<Work />} />
+        </Routes>
     );
 }
 

@@ -1,6 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@layer base {
+    strong {
+        @apply text-2xl;
+    }
+    h1 {
+        @apply text-2xl;
+        @apply font-bold;
+    }
+    h2 {
+        @apply text-xl;
+    }
+}
+
+.slider-thumb::-webkit-slider-thumb {
+    @apply w-[10vw] h-[10vw] rotate-[-270deg] bg-ballon bg-no-repeat bg-cover cursor-pointer appearance-none;
+}
