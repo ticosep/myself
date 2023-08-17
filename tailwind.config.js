@@ -45,17 +45,29 @@ module.exports = withMT({
                     '0%': { opacity: 0 },
                     '100%': { opacity: 1 },
                 },
-                groundAnimation: {
-                    '0%': { backgroundPositionY: 0 },
-                    '100%': { backgroundPositionY: 0 },
+                groundAnimationUp: {
+                    '0%': { backgroundPositionY: '100%' },
+                    '100%': { backgroundPositionY: '100%' },
                 },
-                middleAnimation: {
-                    '0%': { backgroundPositionY: 0 },
+                middleAnimationUp: {
+                    '0%': { backgroundPositionY: '100%' },
                     '100%': { backgroundPositionY: '50%' },
                 },
-                finalAnimation: {
+                finalAnimationUp: {
+                    '0%': { backgroundPositionY: '50%' },
+                    '100%': { backgroundPositionY: 0 },
+                },
+                groundAnimationDown: {
                     '0%': { backgroundPositionY: '50%' },
                     '100%': { backgroundPositionY: '100%' },
+                },
+                middleAnimationDown: {
+                    '0%': { backgroundPositionY: '0' },
+                    '100%': { backgroundPositionY: '50%' },
+                },
+                finalAnimationDown: {
+                    '0%': { backgroundPositionY: 0 },
+                    '100%': { backgroundPositionY: 0 },
                 },
             },
             animation: {
@@ -63,13 +75,16 @@ module.exports = withMT({
                 'spin-slow': 'spin 3s linear infinite',
                 'spin-semi-slow': 'spin 2s linear infinite',
                 fade: 'fadeIn 0.5s ease-in-out',
-                ground: 'groundAnimation 0.5s ease-in-out',
-                middle: 'middleAnimation 0.5s ease-in-out',
-                final: 'finalAnimation 0.5s ease-in-out',
+                groundUp: 'groundAnimationUp 0.5s ease-in-out forwards',
+                middleUp: 'middleAnimationUp 0.5s ease-in-out forwards',
+                finalUp: 'finalAnimationUp 0.5s ease-in-out forwards',
+                groundDown: 'groundAnimationDown 0.5s ease-in-out forwards',
+                middleDown: 'middleAnimationDown 0.5s ease-in-out forwards',
+                finalDown: 'finalAnimationDown 0.5s ease-in-out forwards',
             },
             backgroundImage: {
                 ballon: "url('images/ballon.png')",
-                skyArt: "url('images/sky.jpg')",
+                skyArt: "url('images/sky.png')",
             },
         },
     },

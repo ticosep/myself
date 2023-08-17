@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+import BallonContext from '../../setup/ballonContext';
 
 const ROUTES_MAP: Record<string, string> = {
     0: '/',
@@ -10,17 +11,18 @@ const ROUTES_MAP: Record<string, string> = {
 const SectionScroll = () => {
     const [step, setStep] = useState(0);
     const navigate = useNavigate();
+    const { setCurrentStage } = useContext(BallonContext);
 
     useEffect(() => {
         const route = ROUTES_MAP[step];
-
+        setCurrentStage(step);
         navigate(route);
     }, [step]);
 
     return (
         <input
             type="range"
-            className="absolute w-[90vh] bottom-[45vh] slider-thumb h-2 bg-white
+            className="absolute w-[90vh] bottom-[45vh] slider-thumb h-2 bg-transparent
              rotate-[270deg] rounded-md appearance-none"
             id="sectionStep"
             name="sectionStep"
