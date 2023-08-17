@@ -10,7 +10,7 @@ const PageSection = ({
     return (
         <section
             id={sectionId}
-            className="relative w-full rounded-xl bg-white 
+            className="relative w-full rounded-xl overflow-y-auto bg-white 
             bg-clip-border text-gray-700 shadow-md my-4 p-4"
         >
             {children}

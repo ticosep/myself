@@ -6,7 +6,7 @@ const SectionScroll = () => {
     return (
         <input
             type="range"
-            className="slider-thumb w-[100vh] h-2 bg-[#e2e8f0] 
+            className="absolute w-[80vh] bottom-[40vh] slider-thumb h-2 bg-[#e2e8f0] 
              rotate-[270deg] rounded-md appearance-none"
             id="sectionStep"
             name="sectionStep"

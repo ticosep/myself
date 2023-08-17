@@ -10,9 +10,11 @@ const Layout = ({ children }: LayoutProps) => {
     return (
         <>
             <Header />
-            <SectionScroll />
-            <div className="container w-4/5 ml-[20%] h-[calc(100%-72px)] mt-[72px]">
-                {children}
+            <div className="flex container h-[calc(100%-72px)] mt-[72px]">
+                <div className="flex items-center justify-center w-[20vw]">
+                    <SectionScroll />
+                </div>
+                <div className="flex flex-col w-[80vw]">{children}</div>
             </div>
         </>
     );

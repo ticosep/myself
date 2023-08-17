@@ -6,7 +6,7 @@ const Graduation = () => {
     return (
         <PageSection sectionId="graduation">
             <img
-                className="w-1/5 h-1/5 float-left mr-4 object-contain animate-spinY"
+                className="w-[20%] h-[20%] float-left mr-4 object-contain animate-spinY"
                 src={ufabc}
                 alt="image_ufabc"
             />

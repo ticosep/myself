@@ -6,6 +6,9 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Layout from './components/Layout';
 
+// Lock body scroll
+document.body.style.overflow = 'hidden';
+
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement,
 );
