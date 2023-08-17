@@ -16,5 +16,5 @@
 }
 
 .slider-thumb::-webkit-slider-thumb {
-    @apply w-[10vw] h-[10vw] rotate-[-270deg] bg-ballon bg-no-repeat bg-cover rounded-full cursor-pointer appearance-none;
+    @apply w-[10vw] h-[10vw] rotate-[-270deg] bg-ballon bg-no-repeat bg-cover cursor-pointer appearance-none;
 }

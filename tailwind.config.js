@@ -45,15 +45,31 @@ module.exports = withMT({
                     '0%': { opacity: 0 },
                     '100%': { opacity: 1 },
                 },
+                groundAnimation: {
+                    '0%': { backgroundPositionY: 0 },
+                    '100%': { backgroundPositionY: 0 },
+                },
+                middleAnimation: {
+                    '0%': { backgroundPositionY: 0 },
+                    '100%': { backgroundPositionY: '50%' },
+                },
+                finalAnimation: {
+                    '0%': { backgroundPositionY: '50%' },
+                    '100%': { backgroundPositionY: '100%' },
+                },
             },
             animation: {
                 spinY: 'rotateYSpin 2s linear infinite',
                 'spin-slow': 'spin 3s linear infinite',
                 'spin-semi-slow': 'spin 2s linear infinite',
                 fade: 'fadeIn 0.5s ease-in-out',
+                ground: 'groundAnimation 0.5s ease-in-out',
+                middle: 'middleAnimation 0.5s ease-in-out',
+                final: 'finalAnimation 0.5s ease-in-out',
             },
             backgroundImage: {
                 ballon: "url('images/ballon.png')",
+                skyArt: "url('images/sky.jpg')",
             },
         },
     },
