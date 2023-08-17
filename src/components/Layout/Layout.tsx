@@ -11,7 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
         <>
             <Header />
             <SectionScroll />
-            <div className="container w-4/5 ml-[20%] h-[calc(100%-64px)] mt-[72px]">
+            <div className="container w-4/5 ml-[20%] h-[calc(100%-72px)] mt-[72px]">
                 {children}
             </div>
         </>

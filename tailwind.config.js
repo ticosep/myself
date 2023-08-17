@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+import withMT from '@material-tailwind/react/utils/withMT';
+
+module.exports = withMT({
     mode: 'jit',
     purge: ['./src/**/*.tsx'],
     theme: {
@@ -46,9 +48,9 @@ module.exports = {
                 'spin-semi-slow': 'spin 2s linear infinite',
             },
             backgroundImage: {
-                ballon: "url('./images/ballon.png')",
+                ballon: "url('images/ballon.png')",
             },
         },
     },
-    plugins: [],
-};
+    plugins: [require('autoprefixer')],
+});

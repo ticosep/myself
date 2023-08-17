@@ -8,6 +8,7 @@
         "@fortawesome/free-brands-svg-icons": "^6.4.2",
         "@fortawesome/free-solid-svg-icons": "^6.4.2",
         "@fortawesome/react-fontawesome": "^0.2.0",
+        "@material-tailwind/react": "^2.1.0",
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
@@ -21,6 +22,7 @@
         "eslint-plugin-react": "^7.33.1",
         "eslint-plugin-react-hooks": "^4.6.0",
         "i18next": "^23.4.1",
+        "postcss": "^8.4.28",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-i18next": "^13.0.3",
@@ -60,7 +62,7 @@
         ]
     },
     "devDependencies": {
-        "autoprefixer": "^9.8.6",
+        "autoprefixer": "^10.4.15",
         "eslint-config-prettier": "^8.9.0",
         "eslint-plugin-prettier": "^5.0.0",
         "gh-pages": "^5.0.0",
