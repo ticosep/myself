@@ -41,11 +41,16 @@ module.exports = withMT({
                     '0%': { transform: 'rotateY(0deg)' },
                     '100%': { transform: 'rotateY(360deg)' },
                 },
+                fadeIn: {
+                    '0%': { opacity: 0 },
+                    '100%': { opacity: 1 },
+                },
             },
             animation: {
                 spinY: 'rotateYSpin 2s linear infinite',
                 'spin-slow': 'spin 3s linear infinite',
                 'spin-semi-slow': 'spin 2s linear infinite',
+                fade: 'fadeIn 0.5s ease-in-out',
             },
             backgroundImage: {
                 ballon: "url('images/ballon.png')",

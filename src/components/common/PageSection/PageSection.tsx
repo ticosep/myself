@@ -10,10 +10,14 @@ const PageSection = ({
     return (
         <section
             id={sectionId}
-            className="relative w-full rounded-xl overflow-y-auto bg-white 
-            bg-clip-border text-gray-700 shadow-md my-4 p-4"
+            className="flex h-[100vh] pb-[72px] items-center"
         >
-            {children}
+            <div
+                className="w-full h-fit rounded-xl overflow-y-auto bg-white 
+                bg-clip-border text-gray-700 shadow-md my-4 p-4 animate-fade"
+            >
+                {children}
+            </div>
         </section>
     );
 };

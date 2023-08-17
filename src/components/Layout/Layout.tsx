@@ -14,7 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
                 <div className="flex items-center justify-center w-[20vw]">
                     <SectionScroll />
                 </div>
-                <div className="flex flex-col w-[80vw]">{children}</div>
+                <div className="w-[80vw]">{children}</div>
             </div>
         </>
     );

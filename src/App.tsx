@@ -1,13 +1,13 @@
-import { HashRouter as Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Graduation, Welcome, Work } from './sections';
 
 function App() {
     return (
-        <Router>
-            <Welcome />
-            <Graduation />
-            <Work />
-        </Router>
+        <Routes>
+            <Route path="/" element={<Welcome />} />
+            <Route path="/graduation" element={<Graduation />} />
+            <Route path="/work" element={<Work />} />
+        </Routes>
     );
 }
 
