@@ -5,13 +5,16 @@ module.exports = withMT({
     mode: 'jit',
     purge: ['./src/**/*.tsx'],
     theme: {
+        screens: {
+            'bg-max': { max: '1023px' },
+        },
         container: {
             screens: {
-                sm: '600px',
-                md: '728px',
-                lg: '984px',
-                xl: '1240px',
-                '2xl': '1496px',
+                sm: '640px',
+                md: '768px',
+                lg: '1024px',
+                xl: '1280px',
+                '2xl': '1536px',
             },
             center: true,
         },

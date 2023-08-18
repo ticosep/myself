@@ -28,7 +28,7 @@ const Sky = () => {
 
     return (
         <div
-            className={`absolute bg-skyArt bg-cover
+            className={`fixed bg-skyArt bg-cover bg-max:bg-[length:300%_150%]
             w-[100vw] h-[100vh] z-[-1] top-0 bg-bottom ${animation}`}
         />
     );
