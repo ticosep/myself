@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import withMT from '@material-tailwind/react/utils/withMT';
+import plugin from 'tailwindcss/plugin';
 
 module.exports = withMT({
     mode: 'jit',
@@ -91,5 +92,12 @@ module.exports = withMT({
             },
         },
     },
-    plugins: [require('autoprefixer')],
+    plugins: [
+        plugin(function ({ addBase }) {
+            addBase({
+                html: { fontSize: '26px' },
+            });
+        }),
+        require('autoprefixer'),
+    ],
 });

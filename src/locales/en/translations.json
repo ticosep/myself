@@ -1,6 +1,5 @@
 {
-    "whoAmI": "Hello, i'm Egisto!",
-    "presentation": "<p>Yes that's right Egisto, I am a front-end developer with experience in development of web applications using React framework, take a flight, drag the ballon on the left to see some information about me!</p>",
+    "presentation": "<strong>Hello, i'm Egisto!</strong><p>Yes that's right Egisto, I am a front-end developer with experience in development of web applications using React framework, take a flight, drag the ballon on the left to see some information about me!</p>",
     "graduationDesc": "<strong>First step, GRADUATION!</strong> <p>My academic background was curious, I entered a federal university (UFABC), it has a different teaching, where we spend 3 years in an interdisciplinary baccalaureate and after that we can choose a specific course.</br> Luckily I was able to choose computer science and discover how creating websites is cool. </br> It is worth mentioning that in addition to two diplomas, I was able to learn and understand the world in a different way thanks to this different teaching.</p>",
     "workDesc": "<strong>Second, Work work work</strong> <p>The work journey so far has been intense and full of learning, completing my experience at the university. I went through big companies like Mercedes-benz, where I performed tasks in Access/VBA, and in two start-ups. At pushstart I developed as a front end programmer (React) and at Shape Digital I consolidated this knowledge that is close to completing 6 years.</p>"
 }
